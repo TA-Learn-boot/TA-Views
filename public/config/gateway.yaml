@@ -1,0 +1,7 @@
+# Gateway base URLs per environment (no trailing slash).
+# Set VITE_APP_ENV to qa | staging when building or in .env
+environments:
+  qa:
+    gatewayBaseUrl: "http://192.168.0.102:8082"
+  staging:
+    gatewayBaseUrl: "http://gateway-service"
