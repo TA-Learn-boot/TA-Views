@@ -4,4 +4,4 @@ environments:
   qa:
     gatewayBaseUrl: "http://192.168.0.102:8082"
   staging:
-    gatewayBaseUrl: "http://gateway-service"
+    gatewayBaseUrl: "http://192.168.0.102:8082"
