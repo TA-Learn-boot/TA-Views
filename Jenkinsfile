@@ -38,7 +38,7 @@ pipeline {
                     docker build --build-arg VITE_APP_ENV=${env.VITE_APP_ENV} -t ${env.DOCKER_IMAGE}:${env.BUILD_NUMBER} .
                     docker stop ${env.CONTAINER_NAME} || true
                     docker rm ${env.CONTAINER_NAME} || true
-                    docker run -d --name ${env.CONTAINER_NAME} --network ta_network -p 8081:8080 ${env.DOCKER_IMAGE}:${env.BUILD_NUMBER}
+                    docker run -d --name ${env.CONTAINER_NAME} --network ta_network -p 8080:8080 ${env.DOCKER_IMAGE}:${env.BUILD_NUMBER}
                 """
             }
         }
